@@ -5,11 +5,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-    session_start();
+    //session_start();
     //include_once '../model/Model.php';
-    if(isset($_SESSION['userinventario'])){
-        $USER= unserialize($_SESSION['userinventario']);
-        $ROL=$USER->getROL();    
+//    if(isset($_SESSION['userinventario'])){
+//        $USER= unserialize($_SESSION['userinventario']);
+//        $ROL=$USER->getROL();    
 ?>
 <html>
     <head>
@@ -40,7 +40,7 @@ and open the template in the editor.
     </body>    
 </html>
 <?php
-    }else{
-        header("location: login.php");
-    }
+//    }else{
+//        header("location: login.php");
+//    }
 ?>
