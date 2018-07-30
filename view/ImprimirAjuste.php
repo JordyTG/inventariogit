@@ -1,6 +1,6 @@
 <?php
-include '../model/AjusteProducto.php';
-include '../model/Model.php';
+require_once '../model/AjusteProducto.php';
+require_once '../model/Model.php';
 session_start();
 $ajuste = $_SESSION['ajuste'];
 $numAjus = $ajuste->getNUMEROAJUSTE();

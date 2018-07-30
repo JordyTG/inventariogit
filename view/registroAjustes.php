@@ -1,6 +1,6 @@
 <?php
-include '../model/Producto.php';
-include '../model/Model.php';
+require_once '../model/Producto.php';
+require_once '../model/Model.php';
 session_start();
 $listado = unserialize($_SESSION['listadoProductos']);
 ?>

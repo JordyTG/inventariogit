@@ -1,7 +1,7 @@
 <?php
 
-include_once 'lib/nusoap.php';
-include_once '../model/Model.php';
+require_once 'lib/nusoap.php';
+require_once '../model/Model.php';
 
 $servicio = new soap_server();
 
