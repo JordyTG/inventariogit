@@ -16,7 +16,7 @@
         <h1>MODIFICACIÓN DEL ADMINISTRADOR</h1>
         <br>
          <?php
-        require_once '../model/Administrador.php';
+        include_once '../model/Administrador.php';
         session_start();
         $bodeguero = $_SESSION['administrador'];
         ?>

@@ -1,10 +1,10 @@
 <?php
 
-require_once 'Administrador.php';
-require_once 'Producto.php';
-require_once 'Database.php';
-require_once 'Bodeguero.php';
-require_once 'AjusteProducto.php';
+include_once 'Administrador.php';
+include_once 'Producto.php';
+include_once 'Database.php';
+include_once 'Bodeguero.php';
+include_once 'AjusteProducto.php';
 
 class Model {
 

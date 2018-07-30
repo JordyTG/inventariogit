@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once '../model/Producto.php';
+include_once '../model/Producto.php';
 require_once '../model/Model.php';
 
 session_start();

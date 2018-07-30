@@ -16,7 +16,7 @@
         <h1>MODIFICACIÓN DEL PRODUCTO</h1>
         <br>
          <?php
-        require_once '../model/Producto.php';
+        include_once '../model/Producto.php';
         session_start();
         $producto = $_SESSION['producto'];
         ?>

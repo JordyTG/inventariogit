@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once '../model/Bodeguero.php';
+include_once '../model/Bodeguero.php';
 require_once '../model/Model.php';
 session_start();
 ?>

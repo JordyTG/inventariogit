@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once '../model/Administrador.php';
+include_once '../model/Administrador.php';
 require_once '../model/Model.php';
 
 session_start();

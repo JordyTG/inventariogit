@@ -9,7 +9,7 @@
         <h1>MODIFICACIÓN DEL BODEGUERO</h1>
         <br>
          <?php
-        require_once '../model/Bodeguero.php';
+        include_once '../model/Bodeguero.php';
         session_start();
         $bodeguero = $_SESSION['bodeguero'];
         ?>

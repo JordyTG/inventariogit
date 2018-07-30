@@ -1,5 +1,5 @@
 <?php
-require_once '../model/AjusteProducto.php';
+include_once '../model/AjusteProducto.php';
 require_once '../model/Model.php';
 session_start();
 $ajuste = $_SESSION['ajuste'];
