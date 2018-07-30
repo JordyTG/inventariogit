@@ -1,10 +1,10 @@
 <?php
 
-include_once 'Administrador.php';
-include_once 'Producto.php';
-include_once 'Database.php';
-include_once 'Bodeguero.php';
-include_once 'AjusteProducto.php';
+include_once 'https://frozen-lake-68964.herokuapp.com/model/Administrador.php';
+include_once 'https://frozen-lake-68964.herokuapp.com/model/Producto.php';
+include_once 'https://frozen-lake-68964.herokuapp.com/model/Database.php';
+include_once 'https://frozen-lake-68964.herokuapp.com/model/Bodeguero.php';
+include_once 'https://frozen-lake-68964.herokuapp.com/model/AjusteProducto.php';
 
 class Model {
 
