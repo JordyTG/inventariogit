@@ -2,7 +2,7 @@
 include_once 'vendor/econea/nusoap/src/nusoap.php';
 //include_once 'lib/nusoap.php';
 require_once '../model/Model.php';
-$cliente = new nusoap_client("http://localhost:8081/inventario/webservice/servicio.php",false);
+$cliente = new nusoap_client("https://frozen-lake-68964.herokuapp.com/webservice/servicio.php",false);
 //$cliente = new nusoap_client("http://localhost:8081/inventario/webservice/ws.php?wsdl",true);
 
 $n1=3;
