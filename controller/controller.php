@@ -1,7 +1,9 @@
 <?php
 
-require_once '../model/Model.php';
 require_once '../model/Database.php';
+echo "Incluyo  Database";
+require_once '../model/Model.php';
+echo "Incluyo Model";
 session_start();
 $gmodel = new Model();
 $opcion = $_REQUEST['opcion'];

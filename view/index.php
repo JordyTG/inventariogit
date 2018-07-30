@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <?php
     session_start();
-    include_once 'https://frozen-lake-68964.herokuapp.com/model/Model.php';
+    require_once '../model/Model.php';
     if(isset($_SESSION['userinventario'])){
         $USER= unserialize($_SESSION['userinventario']);
         $ROL=$USER->getROL();    
