@@ -1,5 +1,5 @@
 <?php
-require_once 'vendor/econea/nusoap/src/nusoap.php';
+include_once 'vendor/econea/nusoap/src/nusoap.php';
 //include_once 'lib/nusoap.php';
 require_once '../model/Model.php';
 $cliente = new nusoap_client("http://localhost:8081/inventario/webservice/servicio.php",false);
