@@ -1,0 +1,15 @@
+{
+    "name": "jordytg/inventariogit",
+    "description": "Composer para inventario inventario",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JORDY MARCELO TAEZ GRANDA",
+            "email": "jmtaezg@utn.edu.ec"
+        }
+    ],
+    "require": {
+        "econea/nusoap": "0.9.5.*"
+    }
+}
