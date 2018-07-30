@@ -1,9 +1,7 @@
 <?php
 
-require_once '../model/Database.php';
-echo "Incluyo  Database";
 require_once '../model/Model.php';
-echo "Incluyo Model";
+require_once '../model/Database.php';
 session_start();
 $gmodel = new Model();
 $opcion = $_REQUEST['opcion'];
@@ -190,7 +188,7 @@ switch ($opcion) {
         $IDPRODUCTO = $_REQUEST['IDPRODUCTO'];
         $producto = $gmodel->getpProducto($IDPRODUCTO);
         $_SESSION['producto'] = $producto;
-        header('Location: ../view/AjusteProducto.php');
+        header('Location: ../view/ajustarProducto.php');
         break;
     case "crear_ajuste":
         $IDPRODUCTO = $_REQUEST['IDPRODUCTO'];
@@ -201,13 +199,13 @@ switch ($opcion) {
         $gmodel->insertarAjuste($IDPRODUCTO, $CABECERA, $FECHAAJUSTE, $DETALLE, $CANTIDAD);
         $listado =$gmodel->getAjustes();
         $_SESSION['listadoAjustes'] = serialize($listado);
-        header('Location: ../view/AjusteProducto.php');
+        header('Location: ../view/ajustarProducto.php');
         break;
     case "imprimir":
         $IDAJUSTE = $_REQUEST['IDAJUSTE'];
         $ajuste = $gmodel->getAjuste($IDAJUSTE);
         $_SESSION['ajuste'] = $ajuste;
-        header('Location: ../view/ImprimirAjuste.php');
+        header('Location: ../view/imprimirAjuste.php');
         break;
     case "eliminar_ajuste":
         $IDAJUSTE = $_REQUEST['IDAJUSTE'];
@@ -219,7 +217,7 @@ switch ($opcion) {
     case "listar_ajustes":
         $listado = $gmodel->getAjustes();
         $_SESSION['listadoAjustes'] = serialize($listado);
-        header('Location: ../view/AjusteProducto.php');
+        header('Location: ../view/ajustarProducto.php');
         break;
     case "salir":
         unset($_SESSION['userinventario']);
@@ -241,7 +239,7 @@ switch ($opcion) {
         echo $FECHAFIN = $_REQUEST['FECHAFIN'];
         echo $listado = $gmodel->getAjustePorRango($FECHAINICIO, $FECHAFIN);
         $_SESSION['listadoAjustes'] = serialize($listado);
-        header('Location: ../view/AjusteProducto.php');
+        header('Location: ../view/ajustarProducto.php');
         break;
     default:
         header('Location: ../view/index.php');

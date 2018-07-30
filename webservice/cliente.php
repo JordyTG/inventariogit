@@ -1,6 +1,6 @@
 <?php
-require_once 'lib/nusoap.php';
-require_once '../model/Model.php';
+include_once 'lib/nusoap.php';
+include_once '../model/Model.php';
 $cliente = new nusoap_client("http://localhost:8081/inventario/webservice/servicio.php",false);
 //$cliente = new nusoap_client("http://localhost:8081/inventario/webservice/ws.php?wsdl",true);
 
