@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitaecaec6181cc65b3d00c92b132cfc5db
+class ComposerStaticInitb20a4746a7cff165197a753251da9a8f
 {
     public static $classMap = array (
         'XMLSchema' => __DIR__ . '/..' . '/econea/nusoap/src/nusoap.php',
@@ -26,7 +26,7 @@ class ComposerStaticInitaecaec6181cc65b3d00c92b132cfc5db
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInitaecaec6181cc65b3d00c92b132cfc5db::$classMap;
+            $loader->classMap = ComposerStaticInitb20a4746a7cff165197a753251da9a8f::$classMap;
 
         }, null, ClassLoader::class);
     }

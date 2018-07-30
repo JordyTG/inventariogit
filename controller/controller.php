@@ -212,7 +212,7 @@ switch ($opcion) {
         $gmodel->eliminarAjuste($IDAJUSTE);
         $listado = $gmodel->getAjustes();
         $_SESSION['listadoAjustes'] = serialize($listado);
-        header('Location: ../view/AjusteProducto.php');
+        header('Location: ../view/ajustarProducto.php');
         break;
     case "listar_ajustes":
         $listado = $gmodel->getAjustes();
